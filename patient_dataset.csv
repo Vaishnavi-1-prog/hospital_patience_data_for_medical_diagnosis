@@ -1,0 +1,21 @@
+Name,Age,Blood Group,Disease Name,Condition
+Alice,23,AB-,Arthritis,Recovering
+Bob,25,AB-,Arthritis,Critical
+Charlie,29,B-,Arthritis,Critical
+David,40,A+,Asthma,Critical
+Eve,49,O-,Arthritis,Recovering
+Frank,74,AB-,Heart Disease,Recovering
+Grace,29,O-,Asthma,Recovering
+Hannah,72,A-,Hypertension,Stable
+Ivy,29,A-,Asthma,Stable
+Jack,43,A-,Diabetes,Critical
+Karen,57,A-,Heart Disease,Critical
+Leo,54,B+,Arthritis,Critical
+Mona,70,A-,Heart Disease,Critical
+Nina,28,AB-,None,Recovering
+Oscar,76,O-,Hypertension,Critical
+Pam,49,B-,Asthma,Recovering
+Quinn,78,B-,Arthritis,Stable
+Rita,44,A+,Arthritis,Recovering
+Steve,38,B+,Diabetes,Stable
+Tina,38,AB+,Arthritis,Critical
