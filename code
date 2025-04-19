@@ -1,0 +1,34 @@
+#this code is fully checked in google colab platform
+
+import pandas as pd
+
+# Load the dataset
+file_path = input("Enter the path of the patient dataset: ")
+df = pd.read_csv(file_path)
+
+# Function to get details by disease or name
+def get_details_by_criteria(df):
+    # Ask user to choose between searching by disease or name
+    criteria = input("Do you want to search by 'Disease' or 'Name'? Enter your choice: ").strip().lower()
+
+    if criteria == 'disease':
+        disease = input("Enter the disease name to search for: ")
+        result = df[df['Disease Name'].str.contains(disease, case=False, na=False)]
+    elif criteria == 'name':
+        name = input("Enter the name of the person: ")
+        result = df[df['Name'].str.contains(name, case=False, na=False)]
+    else:
+        print("Invalid choice. Please enter 'Disease' or 'Name'.")
+        return
+
+    # Display the search results
+    if result.empty:
+        print("No records found.")
+    else:
+        print("Search Results:")
+        print(result)
+
+# Ask user if they want to search for details
+search = input("Do you want to search for specific details? (yes/no): ").strip().lower()
+if search == 'yes':
+    get_details_by_criteria(df)
